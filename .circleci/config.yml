@@ -12,8 +12,3 @@ workflows:
     jobs:
       - welcome/run
 
-      - run:
-          name: run lint
-          command: |
-            . venv/bin/activate
-            make lint
