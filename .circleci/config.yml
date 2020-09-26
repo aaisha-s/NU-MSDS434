@@ -11,3 +11,16 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+      # run tests!
+      - run:
+          name: run tests
+          command: |
+            . venv/bin/activate
+            make test
+      # run lints!
+      - run:
+          name: run lint
+          command: |
+            . venv/bin/activate
+            make lint
