@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aaisha Shaikh - NU MSDS 434</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Hotel Comment Sentiment Detector
+		</div>
+		<h2>Detecting the sentiment for a recent hotel stay</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="/results" method="POST">
+		<p>We hope you enjoyed your stay. Please leave any feedback below.</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="submit">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

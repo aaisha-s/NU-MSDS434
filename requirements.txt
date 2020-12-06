@@ -7,3 +7,5 @@ nbval
 click
 flask
 requests
+google-cloud-automl
+google.cloud

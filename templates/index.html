@@ -1,0 +1,40 @@
+
+  
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Aaisha Shaikh - MSDS 434
+		</div>
+		<h2>Hotel review sentiment detector</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form action="/results" method="POST">
+		<p>Enter Your Comment Here</p>
+		<!-- <input type="text" name="comment"/> -->
+		<textarea name="comment" rows="4" cols="50"></textarea>
+		<br/>
+
+		<input type="submit" class="btn-info" value="predict">
+		
+	</form>
+		
+	</div>
+
+	
+	
+
+</body>
+</html>

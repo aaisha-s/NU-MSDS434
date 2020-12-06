@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}"> -->
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Aaisha Shaikh - MSDS 434
+		</div>
+		<h2>Hotel review sentiment detector</h2>
+		
+	</div>
+	</header>
+	<p>User comment: {{ comment }}</p>
+	<div class="results">
+
+
+		
+	{% if prediction == 0%}
+	Sentiment = 0; Really bad.
+	{% elif prediction == 1%}
+    Sentiment = 1; Bad.
+    {% elif prediction == 2%}
+    Sentiment = 2; Just OK.
+    {% elif prediction == 3%}
+    Sentiment = 3; Good.
+    {% elif prediction == 4%}
+	Sentiment = 4; Great!
+	{% endif %}
+
+	</div>
+
+</body>
+</html>
